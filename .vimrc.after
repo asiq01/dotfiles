@@ -1,2 +1,4 @@
 "Changes made after the Janus Install
 color molokai
+let g:indentLine_char = '│'
+let g:indentLine_color_term = 238
