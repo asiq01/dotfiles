@@ -44,7 +44,12 @@ fi
 alias tmux='tmux -2'
 alias tmux='tmux -u'
 alias be='bundle exec'
-alias sn='spotify next'
+alias sn='spotify next; spotify status'
+alias sst='spotify status'
+alias spa='spotify pause'
+alias spl='spotify play'
+alias sv='spotify vol'
+alias subgit='~/Documents/SubGit/bin/subgit'
 #  ---------------------------------------------------------------------------
 #
 #  Description:  This file holds all my BASH configurations and aliases
@@ -75,6 +80,7 @@ alias sn='spotify next'
 #   ------------------------------------------------------------
 #export PATH="$PATH:/usr/local/bin/"
 #export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -110,7 +116,7 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias edit='vim'                            # edit:         Opens any file in vim editor
+alias edit='vim'                           # edit:         Opens any file in vim editor
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
@@ -247,7 +253,7 @@ my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 #   6. NETWORKING
 #   ---------------------------
 
-alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias myip='curl ifconfig.co'                       # myip:         Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
